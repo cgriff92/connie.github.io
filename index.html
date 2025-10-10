@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <header>
+            <img src="images/logo2.jpg" alt="Portfolio Logo" class="header-logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="project.html">Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm Connie Griffin, explore my projects and learn more about me!</p>
+            <p><a href="#contact">Contact me</a></p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>I'm a Computer Science student at UNC Charlotte concentrating in Software Engineering!</li>
+                <li>I am in my 3rd year of college.</li>
+                <li>My favorite part of computer science is the puzzle of problem solving</li>
+                <li>so I love projects where I am given a problem to solve.</li>
+                <li>For my career I want to be a software engineer, right now I am looking for a summer internship.</li>
+            </ul>
+            <p>I am proficient in:</p>
+            <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML/CSS</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: connor.griffin333@gmail.com</li>
+                <li>Phone: 919-798-5560</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/connie-griffin3/">https://www.linkedin.com/in/connie-griffin3/</a></li>
+            </ul>
+            <form id="contactForm" method="post" action="#">
+                <div>
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="100">
+                </div>
+
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[+]?[0-9\s\-\(\)]{10,15}" title="Please enter a valid phone number">
+                </div>
+
+                <div>
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company" maxlength="100">
+                </div>
+
+                <div>
+                    <label for="description">Description *</label>
+                    <textarea id="description" name="Comments" rows="5" required minlength="10" maxlength="2000"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Connie Griffin. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/connie-griffin3/">
+            <img src="images/LinkedIn.png" alt="LinkedIn Logo">
+        </a>
+    </footer>
+</body>
+</html>
